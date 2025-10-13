@@ -1,11 +1,11 @@
-# my-dotfiles
+a# my-dotfiles
 The dotfiles for my arch + hyprland setup
 
-Components:
-kitty
-swaync
-hyprland
-hyprlock
-hypridle
-wofi
-waybar
+Components:<br>
+kitty<br>
+swaync<br>
+hyprland<br>
+hyprlock<br>
+hypridle<br>
+wofi<br>
+waybar<br>
