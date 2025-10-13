@@ -1,4 +1,4 @@
-a# my-dotfiles
+# my-dotfiles
 The dotfiles for my arch + hyprland setup
 
 Components:<br>
