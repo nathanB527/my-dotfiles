@@ -10,16 +10,18 @@
     "margin-right" :13,
     // Choose the order of the modules
     "modules-left": [
+        "power-profiles-daemon",
         "pulseaudio",
         "network",
-        "backlight",
         "tray"
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
+        
         "hyprland/workspaces",
+        "battery",
         "clock"
     ],
     //  Modules configuration
@@ -89,6 +91,22 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "events": {
+            "on-discharging-warning": "notify-send -u normal 'Low Battery'",
+            "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+            "on-charging-100": "notify-send -u normal 'Battery Full!'"
+	},
+	"format": "{capacity}% {icon}",
+	"format-icons": ["", "", "", "", ""],
+	"max-length": 25
     },
     "custom/media": {
         "format": "{icon} {text}",
